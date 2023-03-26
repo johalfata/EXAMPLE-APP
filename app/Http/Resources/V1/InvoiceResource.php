@@ -4,8 +4,9 @@ namespace App\Http\Resources\V1;
 
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\ResourceCollection;
+use Illuminate\Http\Resources\Json\JsonResource;
 
-class InvoiceResource extends ResourceCollection
+class InvoiceResource extends JsonResource
 {
     /**
      * Transform the resource collection into an array.
@@ -16,11 +17,11 @@ class InvoiceResource extends ResourceCollection
     {
         return [
             'id' => $this->id,
-            'customer_id' => $this->customer_id,
+            'customerId' => $this->customer_id,
             'amount' => $this->amount,
             'status' => $this->status,
-            'billed_date' => $this->billed_date,
-            'paid_date' => $this->paid_date,
+            'billedDate' => $this->billed_date,
+            'paidDate' => $this->paid_date
         ];
     }
 }
