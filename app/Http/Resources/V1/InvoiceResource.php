@@ -14,6 +14,13 @@ class InvoiceResource extends ResourceCollection
      */
     public function toArray(Request $request): array
     {
-        return parent::toArray($request);
+        return [
+            'id' => $this->id,
+            'customer_id' => $this->customer_id,
+            'amount' => $this->amount,
+            'status' => $this->status,
+            'billed_date' => $this->billed_date,
+            'paid_date' => $this->paid_date,
+        ];
     }
 }
