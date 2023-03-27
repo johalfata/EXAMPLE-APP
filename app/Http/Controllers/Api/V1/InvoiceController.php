@@ -3,13 +3,14 @@
 namespace App\Http\Controllers\Api\V1;
 
 use App\Models\Invoice;
-use GuzzleHttp\Psr7\Request;
 use App\Filters\V1\InvoicesFilter;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\StoreInvoiceRequest;
 use App\Http\Resources\V1\InvoiceResource;
 use App\Http\Requests\UpdateInvoiceRequest;
 use App\Http\Resources\V1\InvoiceCollection;
+use Illuminate\Http\Request;
+
 
 class InvoiceController extends Controller
 {
