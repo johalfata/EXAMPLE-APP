@@ -39,6 +39,11 @@ class InvoiceController extends Controller
         //
     }
 
+    public function bulkStore(Request $request) 
+    {
+
+    }
+
     /**
      * Store a newly created resource in storage.
      */
