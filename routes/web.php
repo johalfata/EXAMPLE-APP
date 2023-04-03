@@ -25,6 +25,7 @@ Route::get('/', function () {
 
 
 Route::get('/setup', function() {
+    
     $credentials = [
       'email' => 'yuhalfata@gmail.com',
       'password' => 'password'
